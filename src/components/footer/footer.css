@@ -72,10 +72,12 @@
     }
 
     .footer-web .footer-social .social {
-        font-size: large;
-        display: block;
+        font-size: medium;
     }
     .social .logo-sosmed {
-        padding: 0rem 10px;
+       padding: 0.3em 0.4em;
+        margin: 10px 2px;
+        border: 1px solid black;
+        border-radius: 50%;
     }
 }
