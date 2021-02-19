@@ -1,0 +1,81 @@
+.footer-web {
+    color: black;
+    /* background-color: rgb(54, 54, 54); */
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    justify-items: center;
+}
+
+.footer-web .sitemap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sitemap .sitemap-list .sitemap-link {
+    display: block;
+    text-decoration: none;
+    padding: 5px 2px;
+    color: black;
+}
+
+.sitemap .sitemap-list .sitemap-link:hover {
+    color: rgb(207, 207, 207);
+}
+
+.footer-web .footer-social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-web .footer-social .social {
+    font-size: x-large;
+    display: block;
+}
+
+.social .logo-sosmed {
+    padding: 0.5em 0.6em;
+    margin: 0px 1.3rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.social .logo-sosmed:hover {
+    color: white;
+    background-color: black;
+    transition: 1s;
+} 
+
+.copyright {
+    text-align: center;
+}
+.footer-logo {
+    margin: auto;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-web .footer-social {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-social h2 {
+        font-size: medium;
+    }
+
+    .sitemap .sitemap-list .sitemap-link {
+        padding: 2px 2px;
+    }
+
+    .footer-web .footer-social .social {
+        font-size: large;
+        display: block;
+    }
+    .social .logo-sosmed {
+        padding: 0rem 10px;
+    }
+}

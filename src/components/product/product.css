@@ -1,0 +1,140 @@
+.product {
+    width: 90%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 6rem;
+}
+
+
+.product .title-product {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-product h4 {
+    text-decoration: overline red;
+
+}
+
+.title-product h1 {
+    font-size: 3rem;
+}
+
+.list-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    position: relative;
+}
+
+.list-product .card-product {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    grid-template-rows: 1fr 50px 50px;
+    position: relative;
+    box-shadow: 5px 5px 5px grey;
+    border: 1px solid rgb(204, 204, 204);
+    z-index: 1;
+    background-color: white;
+}
+
+.card-product img {
+    width: 100%;
+    height: 100%;
+    max-width: inherit;
+    position: relative;
+    object-fit: cover;
+}
+
+.card-product .image-product {
+    width: 100%;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px transparent;
+}
+
+.card-product .price-product {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.card-product .name-product {
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        padding-bottom: 3rem;
+    }
+
+    .product .title-product {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .title-product h4 {
+        text-decoration: overline red;
+    
+    }
+    
+    .title-product h1 {
+        font-size: 3rem;
+    }
+    
+    .list-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        position: relative;
+    }
+    
+    .list-product .card-product {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        text-align: center;
+        grid-template-rows: 1fr 50px 50px;
+        position: relative;
+        box-shadow: 10px 10px 10px grey;
+        border: 1px solid rgb(204, 204, 204);
+        z-index: 1;
+        background-color: white;
+    }
+    
+    .card-product img {
+        width: 100%;
+        height: 100%;
+        max-width: inherit;
+        position: relative;
+        object-fit: cover;
+    }
+    
+    .card-product .image-product {
+        width: 100%;
+        height: 9rem;
+        position: relative;
+        overflow: hidden;
+        border: 1px transparent;
+    }
+    
+    .card-product .price-product {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .card-product .name-product {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+}

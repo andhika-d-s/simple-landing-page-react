@@ -1,0 +1,116 @@
+
+.container-hero {
+    background-image: url('https://cdn.pixabay.com/photo/2015/09/16/20/10/dough-943245_960_720.jpg'), linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    width: 100%;
+}
+
+.hero-web {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-hero img{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.hero-title .title{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: red;
+}
+
+.hero-title .title-1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    width: 80%;
+}
+
+.hero-title p {
+    margin-top: 0px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+    .container-hero {
+        height: 28rem;
+    }
+
+    .hero-web {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: 4rem;
+     }
+
+    .image-hero {
+        margin-right: 1rem;
+        margin-top: 2.5rem;
+     }
+
+    .hero-title .title{
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+    
+    .hero-title .title-1 {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-hero {
+        height: 40rem;
+    }
+
+    .hero-web {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0rem;
+    }
+
+     .hero-title {
+        margin-left: 0rem;
+        order: 2;
+    }
+    
+     .image-hero {
+        margin-top: 2.5rem;
+     }
+
+     .hero-title .title{
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+    
+    .hero-title .title-1 {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+}
